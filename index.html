@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMT - Kotkantien maalaus- ja tapetointi</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- Fontti -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigointi -->
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="images/logo.png" alt="" class="logo">
+            <h1>KMT</h1>
+        </div>
+        <nav>
+            <button class="navbar-toggler" id="navbar-toggle">&#9776;</button>
+            <ul class="navbar-links" id="navbar-links">
+                <li><a class="active" href="#">Etusivu</a></li>
+                <li><a href="services.html">Palvelut</a></li>
+                <li><a href="color.html">Testaa värit</a></li>
+                <li><a href="gallery.html">Galleria</a></li>
+                <li><a href="contact.html" class="invite-button">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pääsivu -->
+    <section class="main" id="main">
+        <img src="images/iso-logo.png" alt="">
+        <h2><span>Kotkantien</span> maalaus- ja tapetointi</h2>
+        <p>Tarjoamme ammattitaitoista maalaus- ja tapetointipalvelua koteihin ja yrityksiin – laadukasta jälkeä luotettavasti!</p>
+        <a class="main-button" href="services.html">Palvelumme</a>
+    </section>
+
+    <!-- Ominaisuudet -->
+    <section id="features" class="features">
+        <h3>Meidän suurimmat ominaisuudet</h3>
+        <div class="feature-list">
+            <div class="feature-item">
+                <img src="images/palvelu.svg" alt="">
+                <h4>Nopea & laadukas palvelu</h4>
+                <p>Me tarjoamme nopeaa, laadukasta ja kokemuksellista palvelua kaikille asiakkaillimme!</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/tyotiimi.svg" alt="">
+                <h4>Mukavat työntekijät</h4>
+                <p>Meillä on mukava työtiimi, jossa kaikille töitä riittää ja kaikilla on mukava olla!</p>
+            </div>
+            <div class="feature-item">
+                <img src="images/kokemus.svg" alt="">
+                <h4>Kokeneita työntekijöitä</h4>
+                <p>Meillä on töissä kokeneita ja alansa hyvin opiskelleita työntekijöitä.</p>
+            </div>
+        </div>
+        <a class="main-button feature-button" href="contact.html">Yhteystiedot</a>
+    </section>
+
+    <!-- Galleria -->
+    <section class="gallery">
+        <div class="images">
+            <img src="images/galleria_esittely1.jpg" alt="Galleria Esittely 1" class="eka">
+            <img src="images/galleria_esittely2.jpg" alt="Galleria Esittely 2" class="toka">
+        </div>
+        <div class="texts">
+            <h2>Katso meidän tuoreimmat projektit</h2>
+            <p>Tutustu tarkemmin viimeisimpiin projekteihimme ja inspiroidu monipuolisista maalaus- ja tapetointiratkaisuista! Olemme toteuttaneet tyylikkäitä pintakäsittelyjä eri kohteisiin – aina moderneista kotisisustuksista tunnelmallisiin liiketiloihin.</p>
+        </div>
+        <div class="button">
+            <a class="main-button gallery-button" href="gallery.html">Galleria</a>
+        </div>
+    </section>
+
+    <!-- Väro testaus -->
+    <section class="color_testing">
+        <div class="image">
+            <img src="images/paint.jpg" alt="Väritestaus">
+            <h3>Testaa, mikä väri sopisi sinulle parhaiten</h3>
+            <p>Meillä on monen värin valikoima ja meidän värien testaus sivustolla voit testata, mikä sopisi sinun kotiisi parhaiten. Testaa painamalla alla olevasta napista.</p>
+            <a class="main-button color-button" href="color.html">Testaa värejä</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Katso yhteystiedot <a href="contact.html">TÄSTÄ</a></p>
+    </footer>
+
+    <!-- Scrollaa ylös nappi -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+</body>
+</html>

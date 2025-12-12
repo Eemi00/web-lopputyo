@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMT - Palvelut</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/services.css">
+    <!-- navbar -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <!-- Fontti -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome ikonit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    
+    <!-- Navigointi -->
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="images/logo.png" alt="Bot Logo" class="logo">
+            <h1>KMT</h1>
+        </div>
+        <nav>
+            <button class="navbar-toggler" id="navbar-toggle">&#9776;</button>
+            <ul class="navbar-links">
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a class="active" href="services.html">Palvelut</a></li>
+                <li><a href="color.html">Testaa värit</a></li>
+                <li><a href="gallery.html">Galleria</a></li>
+                <li><a href="contact.html" class="invite-button">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Palvelut -->
+    <section class="services">
+        <h2 class="services-title">Palvelumme – Laadukkaat Ratkaisut Kotisi Kaunistamiseen</h2>
+        <div class="service-grid">
+        <div class="service-card">
+            <img src="images/sisätila_maalaus.jpeg" class="service-image">
+            <div class="service-icon"><i class="fas fa-paint-roller"></i></div>
+            <h2>Sisätilojen maalaus</h2>
+            <p>Kun haluat kotisi sisätiloihin uutta eloa, valitse ammattilaisemme toteuttamaan visiosi!</p>
+            <a href="contact.html" class="service-button">Ota yhteyttä</a>
+        </div>
+        <div class="service-card">
+            <img src="images/ulko_maalaus.jpeg" class="service-image">
+            <div class="service-icon"><i class="fas fa-home"></i></div>
+            <h2>Ulkomaalaus</h2>
+            <p>Kun haluat kotisi erottuvan edukseen – luota ammattitaitoiseen ulkomaalauspalveluumme!</p>
+            <a href="contact.html" class="service-button">Ota yhteyttä</a>
+        </div>
+        <div class="service-card">
+            <img src="images/tapetointi.jpg" alt="Wallpaper Installation" class="service-image">
+            <div class="service-icon"><i class="fas fa-border-all"></i></div>
+            <h2>Tapetoinnin asennus</h2>
+            <p>Kun haluat kodistasi vieläkin kauniimman, luota asiantuntevaan tapetointipalveluumme!</p>
+            <a href="contact.html" class="service-button">Ota yhteyttä</a>
+        </div>
+        <div class="service-card">
+            <img src="images/tapetointi_poisto.jpg" alt="Wallpaper Removal" class="service-image">
+            <div class="service-icon"><i class="fas fa-eraser"></i></div>
+            <h2>Tapetin poisto</h2>
+            <p>Anna meidän hoitaa irrottaminen puolestasi – niin voit keskittyä valitsemaan uudet, kauniit tapetit!</p>
+            <a href="contact.html" class="service-button">Ota yhteyttä</a>
+        </div>
+        <div class="service-card">
+            <img src="images/värin_valinta.jpg" alt="Color Consultation" class="service-image">
+            <div class="service-icon"><i class="fas fa-palette"></i></div>
+            <h2>Värikonsultointi</h2>
+            <p>Tee kodistasi kauniimpi ja miellyttävämpi paikka – anna meidän olla apunasi värivalinnoissa!</p>
+            <a href="contact.html" class="service-button">Ota yhteyttä</a>
+            
+        </div>
+        </div>
+    </section>
+
+    <!-- Soita paikalle kohta -->
+    <section class="contact">
+        <h2>Oletko valmis muuttamaan kotisi?</h2>
+        <p>Ota yhteyttä jo tänään keskustellaksesi projektistasi ja pyytääksesi ilmainen tarjous!</p>
+        <button onclick="window.location.href='contact.html'">Pyydä ilmainen tarjous</button>
+    </section>
+
+    <footer class="footer">
+        <p>Katso yhteystiedot <a href="contact.html">TÄSTÄ</a></p>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/navbar.js"></script>
+
+</body>
+</html>

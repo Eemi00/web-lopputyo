@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMT - Yhteystiedot</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- navbar -->
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!-- Ikonit -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Fontti -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigointi -->
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="images/logo.png" alt="Bot Logo" class="logo">
+            <h1>KMT</h1>
+        </div>
+        <nav>
+            <button class="navbar-toggler" id="navbar-toggle">&#9776;</button>
+            <ul class="navbar-links">
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="services.html">Palvelut</a></li>
+                <li><a href="color.html">Testaa värit</a></li>
+                <li><a href="gallery.html">Galleria</a></li>
+                <li><a href="" class="invite-button">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-info">
+            <h2>Ota meihin yhteyttä</h2>
+            <p>Jos sinulla on kysymyksiä tai haluat lisätietoja palveluistamme, täytä alla oleva lomake tai käytä yhteystietojamme.</p>
+
+            <h3>Yhteystiedot</h3>
+            <ul class="yhteystiedot">
+                <li><i class="fas fa-map-marker-alt"></i> <strong>Osoite:</strong> Kotkantie 3, 90100 Oulu</li>
+                <li><i class="fas fa-phone-alt"></i> <strong>Puhelin:</strong> 044 999 888 99</li>
+                <li><i class="fas fa-envelope"></i> <strong>Sähköposti:</strong> info@kotkantienmaalaus.fi</li>
+            </ul>
+
+            <h3>Seuraa meitä</h3>
+            <ul class="social-media">
+                <li><a><i class="fab fa-youtube"></i> YouTube</a></li>
+                <li><a><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Lomake</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Viesti:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="main-button">Lähetä</button>
+            </form>
+        </section>
+    </main>
+
+    <section class="map-container">
+        <h2>Meidän sijaintimme</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.183697675508!2d25.51014031340179!3d64.99978427774589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cd453b254067%3A0x9d8dcb8865232147!2sKotkantie%2C%2090250%20Oulu!5e0!3m2!1sfi!2sfi!4v1730799483029!5m2!1sfi!2sfi" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+    </section>
+
+    <footer class="footer">
+        <p>Kotisivulle <a href="index.html">TÄSTÄ</a></p>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KMT - Värien testaus</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/color.css">
+
+  <!-- Navbar CSS -->
+  <link rel="stylesheet" href="css/navbar.css">
+
+  <!-- Fontti -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigointi -->
+  <header class="navbar">
+    <div class="navbar-logo">
+        <img src="images/logo.png" alt="Bot Logo" class="logo">
+        <h1>KMT</h1>
+    </div>
+    <nav>
+        <button class="navbar-toggler" id="navbar-toggle">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html">Etusivu</a></li>
+            <li><a href="services.html">Palvelut</a></li>
+            <li><a class="active" href="color.html">Testaa värit</a></li>
+            <li><a href="gallery.html">Galleria</a></li>
+            <li><a href="contact.html" class="invite-button">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Värin Vaihto Elementti Kuvalla -->
+    <section class="color-box-container" id="color-box-container">
+        <div class="color-image">
+            <img src="images/seinä_testi.png" class="box-image">
+            <div class="color-box" id="color-box"></div>
+        </div>
+    </section>
+
+    <!-- Väripaletit osio -->
+    <section class="color-palettes">
+      <h2>Suositut väripaletit</h2>
+      <div class="palette-grid">
+        <div class="palette" data-color="#DD4132" style="background-color: #DD4132;">#DD4132</div>
+        <div class="palette" data-color="#9E1030" style="background-color: #9E1030;">#9E1030</div>
+        <div class="palette" data-color="#FE840E" style="background-color: #FE840E;">#FE840E</div>
+        <div class="palette" data-color="#FF6F61" style="background-color: #FF6F61;">#FF6F61</div>
+        <div class="palette" data-color="#C62168" style="background-color: #C62168;">#C62168</div>
+        <div class="palette" data-color="#8D9440" style="background-color: #8D9440;">#8D9440</div>
+        <div class="palette" data-color="#FFD662" style="background-color: #FFD662;">#FFD662</div>
+        <div class="palette" data-color="#00539C" style="background-color: #00539C;">#00539C</div>
+        <div class="palette" data-color="#755139" style="background-color: #755139;">#755139</div>
+        <div class="palette" data-color="#D69C2F" style="background-color: #D69C2F;">#D69C2F</div>
+        <div class="palette" data-color="#616247" style="background-color: #616247;">#616247</div>
+        <div class="palette" data-color="#E8B5CE" style="background-color: #E8B5CE;">#E8B5CE</div>
+        <div class="palette" data-color="#D2C29D" style="background-color: #D2C29D;">#D2C29D</div>
+        <div class="palette" data-color="#343148" style="background-color: #343148;">#343148</div>
+        <div class="palette" data-color="#F0EAD6" style="background-color: #F0EAD6;">#F0EAD6</div>
+        <div class="palette" data-color="#615550" style="background-color: #615550;">#615550</div>
+      </div>
+
+      <!-- Resettaus nappi -->
+      <button id="resetColorButton" class="reset-color">Poista väri</button>
+    </section>
+
+    <!-- Usean kysytyt kysymykset -osio -->
+    <section class="faq">
+      <div class="faq-container">
+        <h1>Usein Kysytyt Kysymykset</h1>
+
+        <div class="faq-item">
+            <h2 class="question">Mitä tämä värien testaussivusto tekee?</h2>
+            <p class="answer">Tämä sivusto auttaa sinua kokeilemaan ja vertailemaan eri värivaihtoehtoja ennen niiden valintaa. Voit helposti valita ja testata eri värisävyjä nähdäksesi, miten ne näyttävät erilaisissa konteksteissa ja valoissa.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">Miten valitsen ja testaan värejä?</h2>
+            <p class="answer">Voit aloittaa valitsemalla värin väripaletista. Kun olet valinnut värin, voit nähdä sen vaikutukset taustaan.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">Mitkä selaimet tukevat tätä sivustoa?</h2>
+            <p class="answer">Tämä sivusto toimii useimmilla selaimilla, kuten Chrome, Firefox, Safari, Opera ja Edge. Suosittelemme käyttämään uusinta selainversiota parhaan käyttökokemuksen varmistamiseksi.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">Onko värien käyttöön rajoituksia?</h2>
+            <p class="answer">Voit käyttää kaikkia värejä vapaasti ilman rajoituksia. Huomioithan kuitenkin, että sivusto saattaa käyttää joitain suosituksia värien kontrastin ja saavutettavuuden parantamiseksi.</p>
+        </div>
+    </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Katso yhteystiedot <a href="contact.html">TÄSTÄ</a></p>
+  </footer>
+
+  <script src="js/color-change.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+</html>
